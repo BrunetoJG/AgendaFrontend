@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Agenda de Compromissos</h1>
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Duração</th>
+                <th scope="col">Local</th>
+                
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let agenda of agendas">
+
+                    <th >{{agenda.id}}</th>
+                    <td> {{agenda.description}}   </td>
+                    <td>{{agenda.duration}}</td>
+                    <td>{{agenda.local}}</td>
+                    
+                    <div class="buttons">
+                    <td>
+                        <button class="btn btn-danger" (click)="delete(agenda)">Remover</button>
+                        
+                        <button class="btn btn-danger" (click)="createNew(agenda.id)">Alterar</button>
+                    </td>
+                </div>
+            </tr>
+            
+            <button class="btn btn-primary" (click)="create()">Novo</button>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,22 @@
+{
+  "agendas": [
+    {
+      "id": 1,
+      "description": "Reuniao da empresa",
+      "duration": "60 min",
+      "local": "Itu - SP"
+    },
+    {
+      "id": 2,
+      "description": "Reuniao da escola",
+      "duration": "20 min",
+      "local": "Itu - SP"
+    },
+    {
+      "id": 3,
+      "description": "Médico",
+      "duration": "50 min",
+      "local": "SP"
+    }
+  ]
+}
