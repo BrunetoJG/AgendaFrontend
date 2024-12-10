@@ -10,7 +10,7 @@ export class AgendaService {
 
   constructor(private http: HttpClient) { }
 
-  url = 'http://localhost:3000/agendas';
+  url = 'https://api.agendabjgfatec.duckdns.org/agendas';
   
   getAgendas(): Observable<Agenda[]>{
     return this.http.get<Agenda[]>(this.url);
